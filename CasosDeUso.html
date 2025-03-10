@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos/estilo1.css">
+    <title>Document</title>
+</head>
+<body class="BodyCas">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="MarcoDelTrabajo.html" id="marcoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Marco del trabajo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="marcoDropdown">
+              <li><a class="dropdown-item" href="MarcoDelTrabajo.html#descripción">Descripción</a></li>
+              <li><a class="dropdown-item" href="MarcoDelTrabajo.html#objetivos">Objetivos</a></li>
+              <li><a class="dropdown-item" href="MarcoDelTrabajo.html#alcance">Alcance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="AnalisisEstructurado.html" id="marcoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Análisis Estructurado
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="marcoDropdown">
+              <li><a class="dropdown-item" href="AnalisisEstructurado.html">Modelo Ambiental</a></li>
+              <li><a class="dropdown-item" href="ModeloDeComportamiento.html">Modelo de Comportamiento</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="OrientadoaObjetos.html" id="marcoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Orientado a Objetos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="marcoDropdown">
+              <li><a class="dropdown-item" href="OrientadoaObjetos.html">Diagrama de Clases</a></li>
+              <li><a class="dropdown-item" href="CasosDeUso.html">Casos de Uso</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Herramientas.html" id="marcoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Herramientas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="marcoDropdown">
+              <li><a class="dropdown-item" href="Herramientas.html">Video</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+
+<!-- Sección Inicio 
+<section id="inicio" class="container my-5">
+  <div class="jumbotron text-center">
+      <h1 class="section-heading" ><strong>Casos de uso</strong></h1>
+  </div>
+
+  ////Tabla de Caso de Uso 1 
+  <div class="table-responsive">
+      <table class="table case-table">
+          <thead>
+              <tr>
+                  <th colspan="2" class="text-center">Caso de Uso: Préstamo</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th>CASO:</th>
+                  <td>Préstamo</td>
+              </tr>
+              <tr>
+                  <th>Actores:</th>
+                  <td>Bibliotecario, Usuario</td>
+              </tr>
+              <tr>
+                  <th>Tipo:</th>
+                  <td>primario y esencial</td>
+              </tr>
+              <tr>
+                  <th>Descripción:</th>
+                  <td>
+                      <ul class="list-unstyled mb-0">
+                          <li>- El usuario solicita un libro específico.</li>
+                          <li>- El bibliotecario verifica la disponibilidad del libro en el sistema.</li>
+                          <li>- Si el libro está disponible, el bibliotecario solicita los datos del usuario para registrar el préstamo.</li>
+                          <li>- El sistema marca el libro como "no disponible" y guarda el registro del préstamo con las fechas de inicio y devolución prevista.</li>
+                      </ul>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+/////Tabla de Caso de Uso 2 
+<div class="table-responsive">
+  <table class="table case-table">
+      <thead>
+          <tr>
+              <th colspan="2" class="text-center">Caso de Uso: Devolución
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>CASO:</th>
+              <td>Devolución
+              </td>
+          </tr>
+          <tr>
+              <th>Actores:</th>
+              <td>Bibliotecario, Usuario</td>
+          </tr>
+          <tr>
+              <th>Tipo:</th>
+              <td>primario</td>
+          </tr>
+          <tr>
+              <th>Descripción:</th>
+              <td>
+                  <ul class="list-unstyled mb-0">
+                      <li>- El usuario regresa un libro que tiene en préstamo.</li>
+                      <li>- El bibliotecario busca el registro del préstamo en el sistema y verifica que el libro corresponde al usuario. </li>
+                      <li>- El sistema calcula si existe alguna multa en caso de retraso.</li> 
+                      <li>- El bibliotecario marca el préstamo como finalizado y actualiza el estado del libro a "disponible".</li>                   
+                  </ul>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+//////Tabla de Caso de Uso 
+<div class="table-responsive">
+  <table class="table case-table">
+      <thead>
+          <tr>
+              <th colspan="2" class="text-center">Caso de Uso: Disponibilidad de Libro
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>CASO:</th>
+              <td>Disponibilidad de Libro</td>
+          </tr>
+          <tr>
+              <th>Actores:</th>
+              <td>Usuario</td>
+          </tr>
+          <tr>
+              <th>Tipo:</th>
+              <td>Secundario</td>
+          </tr>
+          <tr>
+              <th>Descripción:</th>
+              <td>
+                  <ul class="list-unstyled mb-0">
+                      <li>- El usuario consulta la disponibilidad de un libro en el catálogo de la biblioteca.</li>
+                      <li>- El sistema muestra el estado del libro ("disponible" o "no disponible") junto con información adicional (autor, título, ubicación).</li>
+                      <li>- Si el libro está disponible, el usuario puede proceder a solicitar el préstamo.</li>              
+                  </ul>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+/////Tabla de Caso de Uso 
+<div class="table-responsive">
+  <table class="table case-table">
+      <thead>
+          <tr>
+              <th colspan="2" class="text-center">Caso de Uso:  Administración de Usuarios
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>CASO:</th>
+              <td> Administración de Usuarios</td>
+          </tr>
+          <tr>
+              <th>Actores:</th>
+              <td>Bibiotecario</td>
+          </tr>
+          <tr>
+              <th>Tipo:</th>
+              <td>Secundario</td>
+          </tr>
+          <tr>
+              <th>Descripción:</th>
+              <td>
+                  <ul class="list-unstyled mb-0">
+                      <li>- El bibliotecario agrega nuevos usuarios o actualiza la información de usuarios existentes.</li>
+                      <li>- El sistema almacena los datos personales y el historial de préstamos de cada usuario.</li>
+                      <li>- El bibliotecario también puede consultar el historial de préstamos de un usuario para verificar su estado y sanciones, si aplica.</li>              
+                  </ul>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+///// Tabla de Caso de Uso 
+<div class="table-responsive">
+  <table class="table case-table">
+      <thead>
+          <tr>
+              <th colspan="2" class="text-center">Caso de Uso: Administración de Libros
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <th>CASO:</th>
+              <td>Administración de Libros</td>
+          </tr>
+          <tr>
+              <th>Actores:</th>
+              <td>Bibiotecario</td>
+          </tr>
+          <tr>
+              <th>Tipo:</th>
+              <td>Secundario</td>
+          </tr>
+          <tr>
+              <th>Descripción:</th>
+              <td>
+                  <ul class="list-unstyled mb-0">
+                      <li>- El bibliotecario puede agregar, editar o eliminar libros del catálogo de la biblioteca.</li>
+                      <li>- El sistema permite registrar la información del libro (título, autor, editorial, año, etc.) y actualizar su estado de disponibilidad.</li>
+                      <li>- Esta funcionalidad es utilizada para mantener el catálogo organizado y actualizado.</li>              
+                  </ul>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+ ///// Imagen con tamaño controlado 
+  <img src="img/casos_de_uso.png" alt="Casos de uso" class="custom-image">
+</section> --> 
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+</html>
